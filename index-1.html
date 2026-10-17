@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple Watch Ultra 4 Guide – Unofficial companion app for Android</title>
+<meta name="description" content="Setup help, hidden tips and a built-in manual for your Apple Watch Ultra 4. Free on Google Play. Unofficial guide app.">
+<meta property="og:title" content="Apple Watch Ultra 4 Guide">
+<meta property="og:description" content="Your watch, explained. Free on Google Play.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌚</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#06080d; --panel:#0e121b; --line:#222a3a; --text:#eef1f7; --dim:#a3acbf;
+  --coral:#ff6a3d; --pink:#ff2d6f; --mint:#3dffb0; --sky:#26c6ff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{padding:22px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center}
+.brand{font-family:Sora,sans-serif;font-weight:600;font-size:1rem;text-decoration:none}
+nav a{color:var(--dim);text-decoration:none;font-size:.95rem;margin-left:22px}
+nav a:hover{color:var(--text)}
+
+.hero{padding:48px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+h1{font-family:Sora,sans-serif;font-weight:700;font-size:clamp(2.4rem,6vw,4.1rem);line-height:1.08;letter-spacing:-.02em}
+.lead{color:var(--dim);font-size:1.15rem;max-width:30em;margin:22px 0 34px}
+.cta{display:inline-flex;align-items:center;gap:12px;background:var(--text);color:var(--ink);text-decoration:none;font-weight:600;padding:14px 24px;border-radius:14px;transition:transform .15s}
+.cta:hover{transform:translateY(-2px)}
+.cta svg{width:22px;height:22px}
+.note{color:var(--dim);font-size:.9rem;margin-top:14px}
+
+.watch{display:flex;justify-content:center}
+.watch svg{width:min(100%,340px);height:auto;filter:drop-shadow(0 30px 60px rgba(255,45,111,.18))}
+.ring{fill:none;stroke-width:13;stroke-linecap:round;transform:rotate(-90deg);transform-origin:center}
+.ring.bg{opacity:.16}
+.ring.fg{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:fill 1.8s .3s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes fill{to{stroke-dashoffset:var(--off)}}
+
+.inside{border-top:1px solid var(--line);padding:80px 0}
+.inside h2,.contact h2{font-family:Sora,sans-serif;font-size:clamp(1.6rem,3.5vw,2.2rem);line-height:1.2;letter-spacing:-.01em;max-width:18em}
+.teasers{display:grid;grid-template-columns:repeat(3,1fr);margin-top:44px;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.teasers div{padding:30px 26px;background:var(--panel)}
+.teasers div+div{border-left:1px solid var(--line)}
+.teasers h3{font-family:Sora,sans-serif;font-size:1.05rem;margin-bottom:8px}
+.teasers p{color:var(--dim);font-size:.95rem}
+.more{margin-top:22px;color:var(--dim)}
+.more strong{color:var(--mint);font-weight:600}
+
+.contact{border-top:1px solid var(--line);padding:72px 0}
+.contact p{color:var(--dim);margin:14px 0 20px;max-width:34em}
+.mail{font-family:Sora,sans-serif;font-weight:600;font-size:1.15rem;color:var(--text);text-decoration-color:var(--coral);text-underline-offset:6px}
+
+footer{border-top:1px solid var(--line);padding:34px 0 48px;color:var(--dim);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer p{max-width:46em}
+footer a{color:var(--text)}
+
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:1fr}
+  .watch{order:-1}
+  .watch svg{width:230px}
+  .teasers{grid-template-columns:1fr}
+  .teasers div+div{border-left:0;border-top:1px solid var(--line)}
+  nav a:first-child{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .ring.fg{animation:none;stroke-dashoffset:var(--off)}
+  html{scroll-behavior:auto}.cta{transition:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Apple Watch Ultra 4 Guide</a>
+    <nav><a href="#contact">Contact</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Your Apple Watch, finally explained.</h1>
+        <p class="lead">A free Android companion for Apple Watch Ultra 4 owners. Set it up right, find the features you didn't know existed, and keep the manual in your pocket.</p>
+        <a class="cta" href="https://play.google.com/store/apps/details?id=com.watchguide.series11" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#06080d" d="M5 2.8v18.4a1 1 0 0 0 1.5.9l15-9.2a1 1 0 0 0 0-1.8L6.500 1.900A1 1 0 0 0 5 2.800z"/></svg>
+          Get it on Google Play
+        </a>
+        <p class="note">Free · Works offline · Android 8.0 and up</p>
+      </div>
+
+      <div class="watch" aria-hidden="true">
+        <svg viewBox="0 0 320 420">
+          <rect x="70" y="0" width="180" height="70" rx="22" fill="#151a26"/>
+          <rect x="70" y="350" width="180" height="70" rx="22" fill="#151a26"/>
+          <rect x="262" y="150" width="14" height="46" rx="6" fill="#ff6a3d"/>
+          <rect x="262" y="212" width="10" height="38" rx="5" fill="#2b303c"/>
+          <rect x="44" y="62" width="224" height="296" rx="62" fill="#3a4152"/>
+          <rect x="52" y="70" width="208" height="280" rx="55" fill="#06080d"/>
+          <g transform="translate(156 210)">
+            <circle class="ring bg" r="82" stroke="#ff2d6f"/>
+            <circle class="ring bg" r="62" stroke="#3dffb0"/>
+            <circle class="ring bg" r="42" stroke="#26c6ff"/>
+            <circle class="ring fg" r="82" stroke="#ff2d6f" style="--len:515;--off:110"/>
+            <circle class="ring fg" r="62" stroke="#3dffb0" style="--len:390;--off:90"/>
+            <circle class="ring fg" r="42" stroke="#26c6ff" style="--len:264;--off:60"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="inside">
+    <div class="wrap">
+      <h2>A small taste of what's waiting in the app.</h2>
+      <div class="teasers">
+        <div><h3>Start without stress</h3><p>A clear path from unboxing to your first day on the wrist.</p></div>
+        <div><h3>Features worth finding</h3><p>The shortcuts and settings most owners never open.</p></div>
+        <div><h3>Manual on hand</h3><p>The full user guide, readable anywhere, no signal needed.</p></div>
+      </div>
+      <p class="more"><strong>And a lot more</strong> — it's all inside the app.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Questions or feedback?</h2>
+      <p>We read every message. Tell us what's missing or what could be clearer.</p>
+      <a class="mail" href="mailto:allouse.o2003@gmail.com">allouse.o2003@gmail.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Apple Watch Ultra 4 Guide is an unofficial guide app. It is not affiliated with, endorsed by, or sponsored by Apple Inc. Apple, Apple Watch and iPhone are trademarks of Apple Inc., used for identification only.</p>
+    <p><a href="privacy.html">Privacy Policy</a> · © 2026 MOHA DEV</p>
+  </div>
+</footer>
+</body>
+</html>
