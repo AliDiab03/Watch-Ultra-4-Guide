@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Apple Watch Ultra 4 Guide – Unofficial companion app for Android</title>
-<meta name="description" content="Setup help, hidden tips and a built-in manual for your Apple Watch Ultra 4. Free on Google Play. Unofficial guide app.">
-<meta property="og:title" content="Apple Watch Ultra 4 Guide">
+<title>Watch Ultra 4 Guide – Unofficial companion app for Android</title>
+<meta name="description" content="Setup help, hidden tips and a built-in manual for your Ultra 4 watch. Free on Google Play. Unofficial guide app.">
+<meta name="theme-color" content="#06080d">
+<meta property="og:title" content="Watch Ultra 4 Guide">
 <meta property="og:description" content="Your watch, explained. Free on Google Play.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌚</text></svg>">
@@ -35,12 +36,12 @@ h1{font-family:Sora,sans-serif;font-weight:700;font-size:clamp(2.4rem,6vw,4.1rem
 .lead{color:var(--dim);font-size:1.15rem;max-width:30em;margin:22px 0 34px}
 .cta{display:inline-flex;align-items:center;gap:12px;background:var(--text);color:var(--ink);text-decoration:none;font-weight:600;padding:14px 24px;border-radius:14px;transition:transform .15s}
 .cta:hover{transform:translateY(-2px)}
-.cta svg{width:22px;height:22px}
+.cta svg{width:22px;height:22px;flex:none}
 .note{color:var(--dim);font-size:.9rem;margin-top:14px}
 
 .watch{display:flex;justify-content:center}
 .watch svg{width:min(100%,340px);height:auto;filter:drop-shadow(0 30px 60px rgba(255,45,111,.18))}
-.ring{fill:none;stroke-width:13;stroke-linecap:round;transform:rotate(-90deg);transform-origin:center}
+.ring{fill:none;stroke-width:13;stroke-linecap:round;transform-box:fill-box;transform-origin:center;transform:rotate(-90deg)}
 .ring.bg{opacity:.16}
 .ring.fg{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:fill 1.8s .3s cubic-bezier(.2,.8,.2,1) forwards}
 @keyframes fill{to{stroke-dashoffset:var(--off)}}
@@ -57,7 +58,7 @@ h1{font-family:Sora,sans-serif;font-weight:700;font-size:clamp(2.4rem,6vw,4.1rem
 
 .contact{border-top:1px solid var(--line);padding:72px 0}
 .contact p{color:var(--dim);margin:14px 0 20px;max-width:34em}
-.mail{font-family:Sora,sans-serif;font-weight:600;font-size:1.15rem;color:var(--text);text-decoration-color:var(--coral);text-underline-offset:6px}
+.mail{font-family:Sora,sans-serif;font-weight:600;font-size:1.15rem;color:var(--text);text-decoration-color:var(--coral);text-underline-offset:6px;word-break:break-all}
 
 footer{border-top:1px solid var(--line);padding:34px 0 48px;color:var(--dim);font-size:.85rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
@@ -81,7 +82,7 @@ footer a{color:var(--text)}
 <body>
 <header>
   <div class="wrap">
-    <a class="brand" href="#top">Apple Watch Ultra 4 Guide</a>
+    <a class="brand" href="#top">Watch Ultra 4 Guide</a>
     <nav><a href="#contact">Contact</a><a href="privacy.html">Privacy</a></nav>
   </div>
 </header>
@@ -90,10 +91,10 @@ footer a{color:var(--text)}
   <section class="hero">
     <div class="wrap">
       <div>
-        <h1>Your Apple Watch, finally explained.</h1>
-        <p class="lead">A free Android companion for Apple Watch Ultra 4 owners. Set it up right, find the features you didn't know existed, and keep the manual in your pocket.</p>
+        <h1>Your watch, finally explained.</h1>
+        <p class="lead">A free Android companion for Watch Ultra 4 owners. Set it up right, find the features you didn't know existed, and keep the manual in your pocket.</p>
         <a class="cta" href="https://play.google.com/store/apps/details?id=com.watchguide.series11" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#06080d" d="M5 2.8v18.4a1 1 0 0 0 1.5.9l15-9.2a1 1 0 0 0 0-1.8L6.500 1.900A1 1 0 0 0 5 2.800z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#06080d" d="M5 2.8v18.4a1 1 0 0 0 1.5.9l15-9.2a1 1 0 0 0 0-1.8L6.5 1.9A1 1 0 0 0 5 2.8z"/></svg>
           Get it on Google Play
         </a>
         <p class="note">Free · Works offline · Android 8.0 and up</p>
@@ -143,7 +144,7 @@ footer a{color:var(--text)}
 
 <footer>
   <div class="wrap">
-    <p>Apple Watch Ultra 4 Guide is an unofficial guide app. It is not affiliated with, endorsed by, or sponsored by Apple Inc. Apple, Apple Watch and iPhone are trademarks of Apple Inc., used for identification only.</p>
+    <p>Watch Ultra 4 Guide is an unofficial guide app. It is not affiliated with, endorsed by, or sponsored by the manufacturer of the watch it describes. All product names and trademarks belong to their respective owners and are used for identification only.</p>
     <p><a href="privacy.html">Privacy Policy</a> · © 2026 MOHA DEV</p>
   </div>
 </footer>
